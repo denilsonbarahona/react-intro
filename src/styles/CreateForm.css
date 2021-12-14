@@ -1,0 +1,41 @@
+.Form {
+    background-color: #F2F4F5; 
+    display: grid;
+    gap: 16px;
+    color: black;
+    padding: 8px; 
+}
+
+.Form-label {
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.Form-area {
+    font-size: 16px;
+    font-family: Montserrat;
+}
+
+.Form-area:focus {
+    outline-color: #61DAFA;
+  }
+
+.Form-button {
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.Form-button--isCancel {
+    background-color:transparent;
+}
+
+.Form-button--isSubmit {
+    background-color:#61DAFA;
+    
+    color: white;
+}

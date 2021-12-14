@@ -1,0 +1,41 @@
+.Skeleton {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 48px 1fr; 
+    background-color: #FAFAFA;
+    margin-top: 24px; 
+    padding: 8px;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+}
+
+.Skeleton-icon {
+    display: inline-block;
+    inline-size: 48px;
+    block-size: 48px;
+    background-color: rgb(179, 180, 182);
+    border-radius: 50%;
+    animation: skeleton-loader 2s ease-in-out infinite;
+}
+
+.Skeleton-item { 
+    display: inline-block; 
+    block-size: 30%;
+    margin-inline-start: 16px;
+    margin-inline-end: 16px;
+    background-color: rgb(179, 180, 182);
+    opacity: 0.4;
+    transform: scale(1);
+    animation: skeleton-loader 1s ease-in-out infinite;
+}
+
+@keyframes skeleton-loader {
+    0% {
+        opacity: 0.5;       
+        transform: scale(1); 
+    } 
+
+    100% {
+        opacity: 1.2;
+        transform: scale(.99);
+    }
+}
